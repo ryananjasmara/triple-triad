@@ -1,22 +1,14 @@
 import React from 'react';
+import store from './store';
+import { StoreProvider } from 'easy-peasy';
+
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StoreProvider store={store}>
+      <Home />
+    </StoreProvider>
   );
 }
 
