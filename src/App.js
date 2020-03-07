@@ -1,8 +1,8 @@
 import React from 'react';
-import store from './store';
-import history from './services/history';
 import { StoreProvider } from 'easy-peasy';
 import { Router } from 'react-router-dom';
+import store from './store';
+import history from './services/history';
 import AppNavigator from './navigations/AppNavigator';
 
 function App() {
