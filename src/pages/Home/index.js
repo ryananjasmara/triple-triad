@@ -1,16 +1,15 @@
 import React from 'react';
-import { useStoreState, useStoreActions } from 'easy-peasy';
+// import { useStoreState, useStoreActions } from 'easy-peasy';
 
 function Home() {
-    const todos = useStoreState(state => state.todos.items);
-    const add = useStoreActions(actions => actions.todos.add);
-    
-    return (
+  // const todos = useStoreState((state) => state.todos.items);
+  // const add = useStoreActions((actions) => actions.todos.add);
+
+  return (
     <div>
-      {todos.map((todo, idx) => <div key={idx}>{todo}</div>)}
-      <button onClick={() => add('hai')}>Hello</button>
+      <h1>Home Page</h1>
     </div>
-    )
+  );
 }
 
 export default Home;

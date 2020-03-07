@@ -5,12 +5,12 @@ import HomePage from '../pages/Home';
 import OptionPage from '../pages/Option';
 
 export default function AppNavigator() {
-    return (
-        <Switch>
-            <Route path="/" exact component={HomePage} />
-            <Route path="/option" component={OptionPage} />
+  return (
+    <Switch>
+      <Route path="/" exact component={HomePage} />
+      <Route path="/option" component={OptionPage} />
 
-            <Route component={HomePage} />
-        </Switch>
-    );
+      <Route component={HomePage} />
+    </Switch>
+  );
 }
