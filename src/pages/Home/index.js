@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStoreState, useStoreActions, action } from 'easy-peasy';
+import { useStoreState, useStoreActions } from 'easy-peasy';
 
 function Home() {
     const todos = useStoreState(state => state.todos.items);
